@@ -2,6 +2,5 @@
     <h1>{{ weather_data.city }}</h1>
     <h2>{{ weather_data.temperature }}</h2>
     <p>{{ weather_data.description }}</p>
-    <img src="http://openweathemap.org/image/w/{{ weather_data.icon }}.png" alt="weather icon for {{ weather_data.description }}">
-    
+    <img src="https://openweathermap.org/img/wn/{{ weather_data.icon }}@2x.png" alt="weather icon for {{ weather_data.description }}">
 {% endif %}
