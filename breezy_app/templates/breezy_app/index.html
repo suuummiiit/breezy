@@ -13,7 +13,18 @@
         <button type="submit">Compare Weather</button>
     </form>
 
-    <div class="comparison"></div>
+    <div class="comparison">
+        {% if weather_data1 %}
+            <div class="city-container">
+                {% include 'weather_app/city_weather.html' with weather_data=weather_data1 %}
+            </div>
+            {% endif }
+            {% if weather_data2 %}
+            <div class="city-container">
+                {% include 'weather_app/city_weather.html' with weather_data=weather_data1 %}
+            </div>
+        {% endif }
+    </div>
 
 
 </body>
