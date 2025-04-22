@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['breezy-kw8e.onrender.com', 'localhost', '127.0.0.1']
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://breezy-kw8e.onrender.com"
+]
+
 
 
 # Application definition
