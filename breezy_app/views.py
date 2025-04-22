@@ -17,7 +17,7 @@ def index(request):
 
     if request.method == 'POST':
         city1 = request.POST['city1']
-        city2 = request.get('city2', None)
+        city2 = request.POST.get('city2', None)
 
         weather_data1 = fetch_weather(city1, API_KEY, current_weather_url)
         if city2:
